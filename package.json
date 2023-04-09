@@ -1,16 +1,37 @@
 {
   "name": "proxima",
-  "displayName": "Proxima",
-  "description": "Proxima dark theme for Visual Studio Code",
   "version": "0.0.1",
+  "publisher": "dangminhngo",
+  "displayName": "Proxima",
+  "description": "Proxima theme for Visual Studio Code",
+  "icon": "icon.png",
+  "repository": {
+    "url": "https://github.com/dangminhngo/proxima-vscode-theme",
+    "type": "git"
+  },
+  "bugs": {
+    "url": "https://github.com/dangminhngo/proxima-vscode-theme/issues"
+  },
   "engines": {
     "vscode": "^1.77.0"
   },
+  "license": "MIT",
   "scripts": {
-    "start": "node src"
+    "start": "node src",
+    "package": "vsce package",
+    "publish": "vsce publish"
   },
   "categories": [
-    "Themes"
+    "Themes",
+    "Other"
+  ],
+  "keywords": [
+    "warm",
+    "dark",
+    "dark theme",
+    "proxima",
+    "proxima colorscheme",
+    "proxima theme"
   ],
   "contributes": {
     "themes": [
@@ -18,6 +39,11 @@
         "label": "Proxima",
         "uiTheme": "vs-dark",
         "path": "./themes/Proxima-color-theme.json"
+      },
+      {
+        "label": "Proxima Midnight",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Proxima-Midnight-color-theme.json"
       }
     ]
   },
