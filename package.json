@@ -1,0 +1,27 @@
+{
+  "name": "proxima",
+  "displayName": "Proxima",
+  "description": "Proxima dark theme for Visual Studio Code",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.77.0"
+  },
+  "scripts": {
+    "start": "node src"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Proxima",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Proxima-color-theme.json"
+      }
+    ]
+  },
+  "dependencies": {
+    "slugify": "^1.6.6"
+  }
+}
