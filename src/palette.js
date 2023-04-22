@@ -2,8 +2,21 @@ const color = require("./color")
 
 const palettes = {
   default: {
+    fg: "#bbc8cb",
+    bg: "#242d2f",
+    red: "#e3787c",
+    green: "#a4c76f",
+    yellow: "#ddd764",
+    blue: "#6e99de",
+    magenta: "#b08be4",
+    cyan: "#66c5cc",
+    teal: "#5ad8aa",
+    orange: "#e39754",
+    pink: "#d676c3",
+  },
+  midnight: {
     fg: "#dbceb3",
-    bg: "#262f32",
+    bg: "#242d2f",
     red: "#e67e80",
     green: "#a4c76f",
     yellow: "#d1cc66",
@@ -13,19 +26,6 @@ const palettes = {
     teal: "#6fc7a4",
     orange: "#d69760",
     pink: "#c975b9",
-  },
-  midnight: {
-    fg: "#ccd5d9",
-    bg: "#262f32",
-    red: "#de6a6d",
-    green: "#a4c76f",
-    yellow: "#e3dd5f",
-    blue: "#6090db",
-    magenta: "#a57cde",
-    cyan: "#66c5cc",
-    teal: "#4dd6a4",
-    orange: "#e8964f",
-    pink: "#db70c6",
   },
 }
 

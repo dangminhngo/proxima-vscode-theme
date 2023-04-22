@@ -5,7 +5,7 @@ const slugify = require('slugify')
 const color = require('./color')
 
 function write_json(name, content) {
-  fs.writeFileSync(path.resolve(process.cwd(), 'themes', `${name}-color-theme.json`), content)
+  fs.writeFileSync(path.resolve(process.cwd(), 'themes', `${name.toLowerCase()}-color-theme.json`), content)
 }
 
 function create_color_theme(name, style) {
