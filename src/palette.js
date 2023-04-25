@@ -2,17 +2,17 @@ const color = require("./color")
 
 const palettes = {
   default: {
-    fg: "#bbc8cb",
-    bg: "#242d2f",
-    red: "#e3787c",
+    fg: "#b2b8c3",
+    bg: "#262a31",
+    red: "#e36f71",
     green: "#a4c76f",
-    yellow: "#ddd764",
-    blue: "#6e99de",
-    magenta: "#b08be4",
-    cyan: "#66c5cc",
-    teal: "#5ad8aa",
-    orange: "#e39754",
-    pink: "#d676c3",
+    yellow: "#d1cc66",
+    blue: "#5d91e3",
+    magenta: "#9c7acc",
+    cyan: "#82beed",
+    teal: "#77c7a7",
+    orange: "#e39d5f",
+    pink: "#cc89bf",
   },
   midnight: {
     fg: "#dbceb3",
@@ -35,16 +35,16 @@ module.exports = function(style) {
 
   const p = {
     accent: palette.green,
-    dark: color.darken(bg, 48),
+    dark: color.darken(bg, 32),
     bg0: color.darken(bg, 16),
     bg2: color.lighten(bg, 4),
     bg3: color.lighten(bg, 8),
     bg4: color.lighten(bg, 12),
     fg0: color.lighten(fg, 56),
-    fg2: color.darken(fg, 12),
-    fg3: color.darken(fg, 24),
-    fg4: color.darken(fg, 36),
-    comment: color.lighten(bg, 24),
+    fg2: color.darken(fg, 16),
+    fg3: color.darken(fg, 32),
+    fg4: color.darken(fg, 48),
+    comment: color.lighten(bg, 32),
     black: color.lighten(bg, 18),
     white: color.lighten(fg, 64),
     ...palette,
@@ -105,5 +105,3 @@ module.exports = function(style) {
     specs: s,
   }
 }
-
-

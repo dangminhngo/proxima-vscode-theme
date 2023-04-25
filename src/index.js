@@ -1,4 +1,3 @@
-const palette = require('./palette')
 const template = require('./template')
 
 template.create_color_theme('Proxima', 'default')
